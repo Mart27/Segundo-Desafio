@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+<!-- este es el que hace funcionar los glyphicons-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!---->
+	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+<title>Portfolio</title>
+</head>
+<body>
+
+	<div class="card mat-card" id="first-card">
+		<div id="profile-background"><img src="sources/banner.jpg" class="banner"></div>
+		<div id="info" style="padding: 16px">
+			<div id="info-img">
+				<img src="sources/perfil.jpg" class="profile-image"><button class="btn btn-light"><span class="glyphicon glyphicon-pencil"></span></button>
+				</div>
+				<div class="btn-edit">
+			</div>
+			<!-- info data esta usando grid-->
+			<div id="info-data">
+				<div>
+					<h1>Vilchez Martin</h1>
+
+					<div id="info-company">Cursante de #YoProgramo</div>
+					<div id="info-contact">
+						<span>Buenos Aires(Argentina)</span>
+						<span><a href="#">informacion de contacto</a></span>
+					</div>
+				</div>
+				<div>
+					<ul id="info-details">
+						<li id="info-li">
+							<a href="http://isft38.edu.ar/"><img src="sources/icono_isft.jpg" id="ico_isft"><h2>isft nº38</h2>
+						</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- los botones no son afectados por grid al no estar en el contenedor-->
+		<a href="#" class="btn btn-primary">Tengo interes en...</a>
+        <a href="#" class="btn btn-light">Añadir sección</a>
+        <a href="#" class="btn btn-light">Mas</a>
+		</div>
+	</div>
+
+	<div class="card mat-card" id="second-card">
+		<div class="card-tittle">
+			<h3>Acerca de</h3>
+			<!-- editar-->
+			<div id="btn-edit" onclick="cambiar_parrafo()"><button class="btn btn-light" ><span class="glyphicon glyphicon-pencil"></span></button></div>
+			</div>
+			<!---->
+		<div class="card-body">
+			<!--text acerca-de-->
+			<p id="text-acercade">Entusiasta de la programacion, analista de sistemas</p>
+			<!-- input edit_acercade-->
+			<input id="edit_acercade" type="text"  oninput="myfunction2(this.value)" style="display: none">
+		</div>
+	</div>
+
+	<!--card de Estudio -->
+			<div class="card mat-card" id="carddoble">
+				<!-- Primera card -->
+					<div>
+						<img src="sources/experiencia.png" id="icon_exp">
+					</div>
+					<!-- div con experiencia -->
+					<div>
+						<h2>Experiencia</h2>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis minus aspernatur eligendi nisi officia qui adipisci fugiat nam iusto quidem. Quae consequuntur exercitationem quia soluta amet repellat aperiam? Tenetur, quod?</p>
+					</div>
+
+					<!-- div con botones -->
+					<div>
+						<table>
+							<tr>
+								<th></th>
+								<th><button class="btn btn-light"><span class="glyphicon glyphicon-plus"></span></button></th>
+							</tr>
+							<tr>
+								<tbody>
+									<td><button class="btn btn-light"><span class="glyphicon glyphicon-pencil"></span></button></td>
+									<td><button class="btn btn-light"><span class="glyphicon glyphicon glyphicon-trash"></span></button></td>
+								</tbody>
+							</tr>
+						</table>
+					</div>
+					<!-- -->
+				<!-- iconos -->
+				<div>
+					<img src="sources/icono_isft.jpg" id="icono_isft">
+					<br>
+					<img src="sources/icon_escuela.jpg" id="icono_escuela">
+				</div>
+				<div>
+					<!-- educacion-->
+					<h1>Educación</h1>
+					<h2>ISFT nº38</h2>
+					<p>Analista de Sistemas</p>
+					<label>2016-2018</label>
+					<br>
+					<h2>EET nº4</h2>
+					<p>Tecnico en Administracion y Gestión de las organizaciones</p>
+				</div>
+				<div>
+					<!-- botones-->
+						<table>
+							<tr>
+								<th></th>
+								<th><button class="btn btn-light"><span class="glyphicon glyphicon-plus"></span></button></th>
+							</tr>
+							<tr>
+								<tbody>
+									<td><button class="btn btn-light"><span class="glyphicon glyphicon-pencil"></span></button></td>
+									<td><button class="btn btn-light"><span class="glyphicon glyphicon glyphicon-trash"></span></button></td>
+								</tbody>
+							</tr>
+						</table>
+				</div>
+			</div>
+	<!---->
+<!-- card con skills-->
+<!-- solamente modifique la clase a card mat-card para que  se aplique el estilo de css-->
+<div class="card mat-card">
+          <div class="card-body">
+                          <h3>skill de ejemplo</h3>
+                          <div class="edit-bar"><button class="btn btn-light"><span class="glyphicon glyphicon-pencil"></span></button></div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+            </div>
+                          <h3>skill de ejemplo 2</h3>
+                          <div class="edit-bar"><button class="btn btn-light"><span class="glyphicon glyphicon-pencil"></span></button></div>
+            <div class="progress">
+                <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+          </div>
+        </div>
+<!-- card con proyectos -->
+	<div class="card mat-card">
+		<h1>Proyectos</h1>
+		<div class="proyectos">
+			<a href=""><h2>Ejemplo de proyecto</h2></a>
+			<p>descripccion de proyecto</p>
+		</div>
+		<div class="proyectos">
+			<a href=""><h2>ejemplo de proyecto 2</h2></a>
+			<p>descripcion de proyecto</p>
+		</div>
+
+	</div>
+
+
+<!-- Javascript -->
+
+        <script type="text/javascript">
+		
+		function myfunction2(valor){
+			document.getElementById("text-acercade").innerText=valor;
+		}
+
+		function cambiar_parrafo(){
+			document.getElementById("edit_acercade").style.display="block";
+			let texto=document.getElementById("text-acercade").innerText;
+			console.log(texto);
+		}
+
+		</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+.profile-img{
+	height: 200px;
+	width: 200px;
+}
+.banner{
+	height: 200px;
+	width: 100%;
+}
+.mat-card{
+	border-radius: 32px;
+	margin: 20px 10px;
+	padding: 10px;
+	border-color: #0a66c2;
+
+}
+
+.mat-card#first-card{
+	padding: 0px;
+}
+
+div#profile-background{
+	display: flex;
+}
+div#profile-background img{
+	width: 100%;
+	border-radius: 32px 32px 0 0;
+}
+
+.profile-image{
+	border-radius: 50%;
+	width: 152px;
+	height: 152px;
+	margin-top: -110px;
+	z-index: 1;
+}
+
+div#info-actions{
+	display: flex;
+}
+#ico_isft{
+	height: 100px;
+	width: 100px;
+}
+
+#info-li{
+	list-style: none;
+}
+#info-lista{
+	align-self:right;
+}
+#info-data{
+	display: grid;
+	grid-template-columns:80% 20%;
+}
+#btnacercade{display: grid;
+grid-template-columns: 80% 20%;
+}
+.card-tittle{
+	display: grid;
+	grid-template-columns: 90% 10%;
+}
+#btn_acercade{
+	align-items: right;
+}
+
+#carddoble{
+	display: grid;
+	grid-template-columns: 20% 70% 10%;
+	grid-template-rows: auto;
+}
+#icono_isft{
+	height: 150px;
+	width: 125px;
+}
+#icono_escuela{
+	margin-top: 15px;
+	height: 150px;
+	width: 125px;
+	border-radius: 50%
+}
+#icon_exp{
+	height: 150px;
+	width: 125px;
+	margin-bottom: 15px;
+	border-radius: 50%
+}
+.edit-bar{
+	text-align: right;
+}
